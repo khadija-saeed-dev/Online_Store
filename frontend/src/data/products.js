@@ -1,0 +1,25 @@
+const imageUrl = (photoId) => `https://images.unsplash.com/${photoId}?auto=format&fit=crop&w=960&q=85`;
+
+export const categories = [
+  { name: 'Home & Living', image: imageUrl('photo-1494438639946-1ebd1d20bf85'), imageAlt: 'Warm, minimal home interior', description: 'Lighting and seating for calm, comfortable everyday spaces.' },
+  { name: 'Everyday Carry', image: imageUrl('photo-1548036328-c9fa89d128fa'), imageAlt: 'Leather everyday carry bag', description: 'Bags and watches chosen for daily routines and weekend plans.' },
+  { name: 'Audio & Tech', image: imageUrl('photo-1505740420928-5e560c06d30e'), imageAlt: 'Modern over-ear headphones', description: 'Headphones and a compact camera for listening, commuting, and keeping everyday moments.' },
+  { name: 'On the Move', image: imageUrl('photo-1491553895911-0055eca6402d'), imageAlt: 'Neutral everyday sneakers', description: 'Everyday sneakers and a reusable bottle for walks and daily routines.' },
+];
+
+export const products = [
+  { id: 'arc-table-lamp', name: 'Arc Table Lamp', category: 'Home & Living', description: 'A softly sculpted lamp with a warm, focused glow. Its clean silhouette brings a little calm to a bedside table, reading nook, or work space.', price: 148, oldPrice: 180, rating: 4.9, reviewCount: 84, badge: 'Bestseller', image: imageUrl('photo-1507473885765-e6ed057f782c'), imageAlt: 'Sculptural table lamp on a side table', isFeatured: true, isBestSeller: true, isNewArrival: false },
+  { id: 'studio-headphones', name: 'Studio Headphones', category: 'Audio & Tech', description: 'Comfortable over-ear headphones with a balanced sound profile for commutes, desk days, and everything in between.', price: 129, oldPrice: null, rating: 4.8, reviewCount: 61, badge: 'Staff pick', image: imageUrl('photo-1505740420928-5e560c06d30e'), imageAlt: 'Wireless headphones in a warm studio setting', isFeatured: true, isBestSeller: true, isNewArrival: false },
+  { id: 'weekender-tote', name: 'Weekender Tote', category: 'Everyday Carry', description: 'A roomy, easygoing tote with space for the essentials and a few extras. Made for market mornings and last-minute getaways.', price: 86, oldPrice: 108, rating: 4.7, reviewCount: 39, badge: 'Small batch', image: imageUrl('photo-1548036328-c9fa89d128fa'), imageAlt: 'Structured everyday leather tote bag', isFeatured: true, isBestSeller: false, isNewArrival: true },
+  { id: 'everyday-sneaker', name: 'Everyday Sneaker', category: 'On the Move', description: 'A versatile low-top with a comfortable fit and a simple profile that works from a morning walk to a late lunch.', price: 112, oldPrice: null, rating: 4.9, reviewCount: 112, badge: null, image: imageUrl('photo-1491553895911-0055eca6402d'), imageAlt: 'Classic low-top sneakers', isFeatured: true, isBestSeller: true, isNewArrival: false },
+  { id: 'still-water-bottle', name: 'Still Water Bottle', category: 'On the Move', description: 'A reusable bottle with a clean shape and a secure lid, ready to come along for the whole day.', price: 34, oldPrice: null, rating: 4.6, reviewCount: 28, badge: 'New', image: imageUrl('photo-1602143407151-7111542de6e8'), imageAlt: 'Reusable water bottle for daily use', isFeatured: false, isBestSeller: false, isNewArrival: true },
+  { id: 'form-side-chair', name: 'Form Side Chair', category: 'Home & Living', description: 'A comfortable side chair with a considered profile, made to bring an easy seat to a dining table or quiet corner.', price: 245, oldPrice: null, rating: 4.8, reviewCount: 47, badge: 'New', image: imageUrl('photo-1503602642458-232111445657'), imageAlt: 'Modern wood and fabric side chair', isFeatured: false, isBestSeller: false, isNewArrival: true },
+  { id: 'field-watch', name: 'Field Watch', category: 'Everyday Carry', description: 'An understated everyday watch with a clear dial and dependable details. A thoughtful companion for wherever you are headed.', price: 175, oldPrice: 210, rating: 4.9, reviewCount: 73, badge: null, image: imageUrl('photo-1523275335684-37898b6baf30'), imageAlt: 'Minimal wristwatch with a dark face', isFeatured: false, isBestSeller: true, isNewArrival: false },
+  { id: 'instant-camera', name: 'Pocket Instant Camera', category: 'Audio & Tech', description: 'A compact camera for turning small everyday moments into prints you can keep, share, and stick on the fridge.', price: 98, oldPrice: null, rating: 4.7, reviewCount: 31, badge: 'Just arrived', image: imageUrl('photo-1526170375885-4d8ecf77b99f'), imageAlt: 'Compact instant camera ready for a day out', isFeatured: false, isBestSeller: false, isNewArrival: true },
+];
+
+export const reviews = [
+  { name: 'Maya R.', rating: 5, text: 'The lamp is even lovelier in person. Beautiful light, thoughtful packaging, and it arrived in two days.' },
+  { name: 'Jordan K.', rating: 5, text: 'Finally found a bag that feels considered without being precious. It goes everywhere with me.' },
+  { name: 'Elena S.', rating: 5, text: 'Such a refreshing edit of useful things. The quality is excellent and the whole experience felt personal.' },
+];

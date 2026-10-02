@@ -1,0 +1,33 @@
+# SEO Keyword Report
+
+Keyword themes below are derived from the current Morrow & Co. product names, categories, and descriptions. Search intent is a qualitative estimate; no search-volume or difficulty data was collected.
+
+| Page | Primary keyword | Secondary keywords | Long-tail keywords | Search intent | SEO title | Meta description |
+| --- | --- | --- | --- | --- | --- | --- |
+| Homepage | thoughtful home goods | everyday essentials, everyday carry, audio and tech | shop thoughtful home goods online; everyday essentials for daily living | Commercial | Thoughtful Home Goods & Everyday Essentials \| Morrow & Co. | Shop thoughtful home goods, everyday carry, audio, and useful essentials chosen for daily life. Explore lamps, bags, headphones, sneakers, and more. |
+| Shop | home goods and everyday essentials online | home and living, bags, watches, headphones, cameras, sneakers, reusable bottles | shop useful home goods and everyday essentials online | Commercial | Shop Home Goods & Everyday Essentials \| Morrow & Co. | Browse thoughtful home goods, everyday carry, audio and tech, and useful essentials for daily life. |
+| Home & Living category | home and living | table lamps, side chairs, home accents | shop home and living products online; table lamps and side chairs for everyday spaces | Commercial | Home & Living \| Morrow & Co. | Lighting and seating for calm, comfortable everyday spaces. |
+| Everyday Carry category | everyday carry | tote bags, watches, bags | shop everyday carry online; roomy tote bags and everyday watches | Commercial | Everyday Carry \| Morrow & Co. | Bags and watches chosen for daily routines and weekend plans. |
+| Audio & Tech category | audio and tech | over-ear headphones, instant camera | shop audio and tech online; headphones for commuting and desk days | Commercial | Audio & Tech \| Morrow & Co. | Headphones and a compact camera for listening, commuting, and keeping everyday moments. |
+| On the Move category | everyday sneakers and reusable bottles | low-top sneakers, water bottles | shop everyday sneakers online; reusable bottles for daily routines | Commercial | On the Move \| Morrow & Co. | Everyday sneakers and a reusable bottle for walks and daily routines. |
+| Search results | the visitor's search phrase | matching product names and categories | generated from the entered phrase and matching catalog records | Mixed; query-dependent | Search results for “{query}” \| Morrow & Co. | Search Morrow & Co. for {query}. Browse matching products and everyday essentials. |
+| Arc Table Lamp | Arc Table Lamp | table lamp, Home & Living, warm focused lighting | Arc Table Lamp online; sculptural table lamp for a bedside table or reading nook | Commercial | Arc Table Lamp \| Home & Living \| Morrow & Co. | Generated from the product's current name, category, and stored description. |
+| Studio Headphones | Studio Headphones | over-ear headphones, Audio & Tech, balanced sound | Studio Headphones online; comfortable over-ear headphones for commutes and desk days | Commercial | Studio Headphones \| Audio & Tech \| Morrow & Co. | Generated from the product's current name, category, and stored description. |
+| Weekender Tote | Weekender Tote | tote bag, Everyday Carry, roomy bag | Weekender Tote online; roomy everyday tote for market mornings and short getaways | Commercial | Weekender Tote \| Everyday Carry \| Morrow & Co. | Generated from the product's current name, category, and stored description. |
+| Everyday Sneaker | Everyday Sneaker | low-top sneakers, On the Move, comfortable footwear | Everyday Sneaker online; low-top sneakers for walking and daily wear | Commercial | Everyday Sneaker \| On the Move \| Morrow & Co. | Generated from the product's current name, category, and stored description. |
+| Still Water Bottle | Still Water Bottle | reusable water bottle, On the Move, secure lid | Still Water Bottle online; reusable bottle with a secure lid for everyday use | Commercial | Still Water Bottle \| On the Move \| Morrow & Co. | Generated from the product's current name, category, and stored description. |
+| Form Side Chair | Form Side Chair | side chair, Home & Living, dining chair | Form Side Chair online; comfortable side chair for a dining table or quiet corner | Commercial | Form Side Chair \| Home & Living \| Morrow & Co. | Generated from the product's current name, category, and stored description. |
+| Field Watch | Field Watch | everyday watch, Everyday Carry, clear dial | Field Watch online; understated everyday watch with a clear dial | Commercial | Field Watch \| Everyday Carry \| Morrow & Co. | Generated from the product's current name, category, and stored description. |
+| Pocket Instant Camera | Pocket Instant Camera | compact camera, Audio & Tech, instant prints | Pocket Instant Camera online; compact camera for keeping and sharing everyday moments | Commercial | Pocket Instant Camera \| Audio & Tech \| Morrow & Co. | Generated from the product's current name, category, and stored description. |
+| About | Morrow & Co. | thoughtful everyday goods, home goods, everyday essentials | Morrow & Co. home goods and everyday essentials | Navigational / discovery | About Morrow & Co. \| Morrow & Co. | Morrow & Co. brings together useful objects for everyday living, including home accents, everyday carry, audio and tech, and daily essentials. |
+| Contact | None until verified contact details are published | None | None | Support; not currently indexable | Contact Morrow & Co. \| Morrow & Co. | Customer care information for product and order questions. |
+
+Product titles and descriptions are generated from the live product record. The product schema only emits stored product data; it omits SKU, brand, availability, ratings, and reviews when the corresponding fields are absent.
+
+## Indexing Notes
+
+- Search results and account, cart, checkout, order, contact-placeholder, not-found, and admin pages are marked `noindex` or blocked in robots rules.
+- The backend serves a dynamic sitemap from active products and their categories at `/api/seo/sitemap.xml`; backend robots text is available at `/api/seo/robots.txt`.
+- Set `VITE_SITE_URL` and backend `PUBLIC_SITE_URL` to the production storefront origin. Production hosting must route the storefront's sitemap/robots URLs to the backend endpoints if the API is hosted separately.
+- The storefront is a client-rendered Vite application. Google can render its route metadata and JSON-LD, but social crawlers and non-JavaScript bots may require server rendering or pre-rendering for equivalent per-product HTML.
+- The Contact page remains `noindex` until verified customer-care details replace the current placeholder.
